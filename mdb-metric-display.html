@@ -10,7 +10,6 @@ The following custom properties and mixins are also available for styling:
 Custom property | Description | Default
 ----------------|-------------|----------
 `--stat-value` | Mixin applied to the stat value | `{}`
-`--stat-description-text-color` | Text color for stat description | `#afafaf`
 `--stat-description` | Mixin applied to stat description | `{}`
 
 @demo demo/index.html 
@@ -23,32 +22,33 @@ Custom property | Description | Default
         font-family: 'Roboto', 'Noto', sans-serif;
         flex: 1;
         flex-basis: 0.000000001px;
-        border: 1px solid #e1e6ed;
+        border: 1px solid var(--mdb-border-color, #000);
         border-right: 0;
         height: 135px;
         position: relative;
       }
-      
+
       section {
         padding: 10px;
-        text-align: center;        
+        text-align: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
       }
-      
+
       .stat-value {
         font-size: 2em;
+        color: var(--mdb-primary-text-dark, #000);
         @apply(--stat-value);
       }
-      
+
       .stat-description {
         font-size: 1.3em;
         font-weight: 400;
         margin: 0;
-        color:var(--stat-description-text-color,#afafaf);
+        color: var(--mdb-secondary-text-dark, #000);
         @apply(--stat-description);
       }
     </style>
@@ -87,9 +87,9 @@ Custom property | Description | Default
         display: flex;
         line-height: 1.5;
       }
-      
+
        ::content mdb-metric-display:last-of-type {
-        border-right: 1px solid #e1e6ed;
+        border-right: 1px solid var(--mdb-border-color, #000);
       }
     </style>
     <content></content>
