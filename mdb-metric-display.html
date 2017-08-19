@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../font-roboto/roboto.html">
+<link rel="import" href="../paper-styles/typography.html">
 
 <!--
 `mdb-metric-display`
@@ -18,14 +18,14 @@ Custom property | Description | Default
 <dom-module id="mdb-metric-display">
   <template>
     <style>
-       :host {
-        font-family: 'Roboto', 'Noto', sans-serif;
+       :host {        
         flex: 1;
         flex-basis: 0.000000001px;
         border: 1px solid var(--mdb-border-color, #000);
         border-right: 0;
         height: 135px;
         position: relative;
+        @apply(--paper-font-common-base);
       }
 
       section {
