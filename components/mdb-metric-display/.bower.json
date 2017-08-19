@@ -12,11 +12,11 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   },
   "homepage": "https://github.com/makedatabetter-dev/mdb-metric-display",
-  "_release": "5f27b82625",
+  "_release": "a81c5103e9",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "5f27b82625e05e399de557ff4c3ec1f91a838be4"
+    "commit": "a81c5103e970adfc4020af43ce0680d14345e1e1"
   },
   "_source": "https://github.com/makedatabetter-dev/mdb-metric-display.git",
   "_target": "master",
