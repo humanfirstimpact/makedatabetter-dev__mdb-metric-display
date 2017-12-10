@@ -51,10 +51,15 @@ Custom property | Description | Default
         color: var(--mdb-secondary-text-dark, #000);
         @apply(--stat-description);
       }
+
+      .stat-secondary-info{
+        font-size: 1.1em;
+      }
     </style>
     <section class="stat">
       <span class="stat-value">[[stat-value]]</span>
       <p class="stat-description">[[stat-description]]</p>
+      <p class="stat-description stat-secondary-info">[[statSecondaryInfo]]</p>
     </section>
   </template>
 
@@ -72,7 +77,11 @@ Custom property | Description | Default
 
         statValue: String,
 
-        statDescription: String
+        statDescription: String,
+
+        statSecondaryInfo: {
+          type: String
+        }
       },
 
     });
